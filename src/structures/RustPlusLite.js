@@ -18,7 +18,7 @@
 
 */
 
-const RustPlusLib = require('@liamcottle/rustplus.js');
+const RustPlusLib = require('@tsbreuer/rustplus.js');
 
 const Client = require('../../index.ts');
 const Config = require('../../config');

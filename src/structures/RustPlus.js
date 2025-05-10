@@ -20,7 +20,7 @@
 
 const Fs = require('fs');
 const Path = require('path');
-const RustPlusLib = require('@liamcottle/rustplus.js');
+const RustPlusLib = require('@tsbreuer/rustplus.js');
 const Translate = require('translate');
 
 const Client = require('../../index.ts');
@@ -342,7 +342,7 @@ class RustPlus extends RustPlusLib {
                 return { error: Client.client.intlGet(null, 'tokensDidNotReplenish') };
             }
 
-            const response = await this.sendRequestAsync({
+            return await this.sendRequestAsync({
                 entityId: id,
                 setEntityValue: {
                     value: value
@@ -350,8 +350,6 @@ class RustPlus extends RustPlusLib {
             }, timeout).catch((e) => {
                 return e;
             });
-
-            return response;
         }
         catch (e) {
             return e;
