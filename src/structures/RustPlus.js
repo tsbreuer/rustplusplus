@@ -342,7 +342,7 @@ class RustPlus extends RustPlusLib {
                 return { error: Client.client.intlGet(null, 'tokensDidNotReplenish') };
             }
 
-            return await this.sendRequestAsync({
+            const response = await this.sendRequestAsync({
                 entityId: id,
                 setEntityValue: {
                     value: value
@@ -350,6 +350,8 @@ class RustPlus extends RustPlusLib {
             }, timeout).catch((e) => {
                 return e;
             });
+
+            return response;
         }
         catch (e) {
             return e;

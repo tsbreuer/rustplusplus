@@ -1,7 +1,7 @@
 {
     "name": "rustplusplus",
     "version": "1.21.0",
-    "description": "A NodeJS Discord Bot that uses the rustplus.js library to utilize the power of the Rust+ Companion App with additional Quality-of-Life features.",
+    "description": "A NodeJS Discord Bot that uses the rustplus.js library to utilize the power of the Rust+ Companion App with additional Quality-of-Life features. - Forked from alexmanuelol",
     "main": "index.ts",
     "scripts": {
         "start": "ts-node .",
@@ -10,20 +10,20 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/alexemanuelol/rustplusplus.git"
+        "url": "https://github.com/tsbreuer/rustplusplus.git"
     },
     "author": "Alexemanuelol",
     "license": "SEE LICENSE IN LICENSE",
     "bugs": {
-        "url": "https://github.com/alexemanuelol/rustplusplus/issues"
+        "url": "https://github.com/tsbreuer/rustplusplus/issues"
     },
-    "homepage": "https://github.com/alexemanuelol/rustplusplus#readme",
+    "homepage": "https://github.com/tsbreuer/rustplusplus#readme",
     "dependencies": {
         "@discordjs/rest": "^1.6.0",
         "@discordjs/voice": "^0.16.0",
         "@formatjs/intl": "^2.6.9",
         "@liamcottle/push-receiver": "^0.0.4",
-        "@liamcottle/rustplus.js": "git+https://github.com/alexemanuelol/rustplus.js.git#698c30a0c3060cbc1f515e0725419e07f4de49c4",
+        "@tsbreuer/rustplus.js": "git+https://github.com/tsbreuer/rustplus.js.git#9ed060bd562d4b6a4f77e26f33bdcc28d23c9ba9",
         "axios": "^1.3.4",
         "colors": "^1.4.0",
         "discord-api-types": "^0.37.37",
